@@ -1,0 +1,23 @@
+<div class="wrap">
+
+  <h1>To Do's</h1>
+
+  <div class="list">
+    <div class="add">
+      <a href="" ng-click="addTodo()">+ voeg een nieuwe toe</a>
+    </div>
+    <br />
+    <div ng-repeat="todo in todos | orderBy: 'completed'" ng-init="todo.completed = false" class="todo">
+      <input ng-model="todo.completed" type="checkbox" />
+      <label ng-class="{'completed': todo.completed}" ng-hide="editing" class="editing-label">{{todo.name}}</label>
+      <input ng-blur="editing = false;" ng-show="editing" ng-model="todo.name" type="text" class="editing-label" />
+
+      <div class="actions">
+        <a href="" ng-click="editing = !editing">edit</a>
+        <a href="" ng-click="saveTodo(todo)">save</a>
+        <a href="" ng-click="deleteTodo(todo)" class="delete">delete</a>
+      </div>
+    </div>
+  </div>
+
+</div>

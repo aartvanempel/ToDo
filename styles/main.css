@@ -1,0 +1,18 @@
+body {
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.wrap {
+  margin: 7rem auto 0 auto;
+  width: 18rem;
+}
+
+.todo {
+  margin-bottom: 1rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
