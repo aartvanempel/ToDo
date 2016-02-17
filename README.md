@@ -1,2 +1,3 @@
 # ToDoList-AngularJS
-Followed the Team Treehouse tutorial: To Do list in AngularJS.
+To Do list in AngularJS.
+Tutorial gevolgd op Team Treehouse.
